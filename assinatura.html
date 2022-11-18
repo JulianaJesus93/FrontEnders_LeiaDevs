@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/estilo_BASE.css">
+    <link rel="stylesheet" href="./CSS/estilo_forms.css">
+
+    <link rel="icon" type="image/x-icon" href="./imagens/favLogo.png">
+    <title>Assinatura</title>
+</head>
+
+<body>
+    <nav id="menu"></nav> <!--js html DOM para navBar-->
+
+    <section id="assinatura">
+        <div class="imagem">
+            <img src="./imagens/favLogo.png" alt="">
+        </div>
+        <section id="analisePerfil">
+            <h1>Análise de Perfil</h1>
+            <div class="dados_usuario" id="sua_experiencia">
+                <h2>Suas experiências</h2>
+                <div class="dadosPerfil">
+                    <label for="escolaridade"> 1) Qual sua escolaridade?
+                        <select name="" id="escolaridade">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Ensino Fundamental Incompleto</option>
+                            <option>Ensino Fundamental Completo</option>
+                            <option>Ensino Médio Incompleto</option>
+                            <option>Ensino Médio Completo</option>
+                            <option>Ensino Superior Incompleto</option>
+                            <option>Ensino Superior Completo</option>
+                            <option>Pós-graduação, Mestrado ou Pós-doutorado</option>
+                            <option>Outro</option>
+                            <option>Prefiro não responder</option>
+                        </select>
+                    </label>
+
+                    <label for="faculdade"> 2) Caso tenha cursado faculdade, foi da área de tecnologia?
+                        <select name="" id="faculdade">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="curso"> 3) Você já fez algum curso de programação ou áreas afins?
+                        <select name="" id="curso">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="ingles"> 4) Qual seu nível de inglês?
+                        <select name="" id="ingles">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Básico</option>
+                            <option>Intermediário</option>
+                            <option>Avançado</option>
+                            <option>Fluente</option>
+                            <option>Não se aplica</option>
+                        </select>
+                    </label>
+
+                    <label for="trabalho"> 5) Você já trabalhou com programação, desenvolvimento web ou áreas afins?
+                        <select name="" id="trabalho">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="tempo"> 6) Há quanto tempo você está inserido na área de tecnologia?
+                        <select name="" id="tempo">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Há menos de 3 meses</option>
+                            <option>Entre 3 e 6 meses</option>
+                            <option>Entre 6 meses e 1 ano</option>
+                            <option>Entre 1 e 3 anos</option>
+                            <option>Entre 3 e 5 anos</option>
+                            <option>Entre 5 e 8 anos</option>
+                            <option>Entre 8 e 10 anos</option>
+                            <option>Há mais de 10 anos</option>
+                            <option>Não se aplica</option>
+                        </select>
+                    </label>
+                </div>
+            </div> <!--fim #sua_experiencia-->
+
+            <div class="dados_usuario" id="seus_objetivos">
+                <h2>Seus objetivos</h2>
+                <div class="dadosPerfil">
+                    <label for="org_tech"> 1) Você tem interesse em entender sobre a organização do setor de tecnologia, referente à cargos e posições?
+                        <select name="" id="org_tech">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Bastante interesse</option>
+                            <option>Pouco interesse</option>
+                            <option>Nenhum interesse</option>
+                        </select>
+                    </label>
+
+                    <label for="int_planoCarreira"> 2) Você tem interesse em conteúdos sobre planos de carreira?
+                        <select name="" id="int_planoCarreira">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Bastante interesse</option>
+                            <option>Pouco interesse</option>
+                            <option>Nenhum interesse</option>
+                        </select>
+                    </label>
+
+                    <label for="planoCarreira"> 3) Você tem um plano de carreira?
+                        <select name="" id="planoCarreira">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="autogestão"> 4) Você sabe o que é autogestão e gestão de pessoas?
+                        <select name="" id="autogestão">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="ferramentas"> 5) Quantas ferramentas online você utiliza para gerir seu tempo, projetos, times, finanças e outros?
+                        <select name="" id="ferramentas">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Nenhuma</option>
+                            <option>Entre 1 e 3 ferramentas</option>
+                            <option>Entre 3 e 5 ferramentas</option>
+                            <option>Entre 5 e 10 ferramentas</option>
+                            <option>Mais de 10 ferramentas</option>
+                        </select>
+                    </label>
+
+                    <label for="lider"> 6) Você lidera alguma equipe?
+                        <select name="" id="lider">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="administra"> 7) Você administra alguma startup, micro-empresa, empresa, companhia, entre outros?
+                        <select name="" id="administra">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                </div>
+            </div> <!--fim #seus_objetivos-->
+
+            <div class="dados_usuario" id="habilidades_tecnicas">
+                <h2>Suas habilidades técnicas</h2>
+                <div class="dadosPerfil">
+                    <label for="htmlCSS"> Você sabe usar HTML e CSS?
+                        <select name="" id="htmlCSS">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+                    
+                    <label for="linguagens"> Quantas linguagens de programação você conhece?
+                        <select name="" id="linguagens">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Nenhuma</option>
+                            <option>Entre 1 e 3 linguagens</option>
+                            <option>Entre 3 e 5 linguagens</option>
+                            <option>Mais de 5 linguagens</option>
+                        </select>
+                    </label>
+
+                    <label for="ling_fav"> Caso já programe, qual sua linguagem de programação preferida?
+                        <select name="" id="ling_fav">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Javascript</option>
+                            <option>PHP</option>
+                            <option>Python</option>
+                            <option>C#</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>SQL</option>
+                            <option>Outra</option>
+                            <option>Não se aplica</option>
+                        </select>
+                    </label>
+
+                    <label for="framework"> Você conhece framework?
+                        <select name="" id="framework">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </label>
+
+                    <label for="ling_aprender1"> Escolha a primeira linguagem de programação que você mais tem interesse em aprender?
+                        <select name="" id="ling_aprender1">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option>Javascript</option>
+                            <option>PHP</option>
+                            <option>Python</option>
+                            <option>C#</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>SQL</option>
+                            <option>Outra</option>
+                            <option>Não se aplica</option>
+                        </select>
+                    </label>
+
+                    <label for="ling_aprender2"> Escolha a segunda linguagem de programação que você tem interesse em aprender
+                        <select name="" id="ling_aprender2">
+                            <option selected disabled value="0" >Selecione uma opção</option>
+                            <option value="1">Javascript</option>
+                            <option value="2">PHP</option>
+                            <option value="3">Python</option>
+                            <option value="5" >C#</option>
+                            <option value="6">C++</option>
+                            <option value="7">Java</option>
+                            <option value="8">SQL</option>
+                            <option value="9">Outra</option>
+                            <option value="10">Não se aplica</option>
+                        </select>
+                    </label>
+                </div>
+            </div> <!--fim #habilidades_tecnicas-->
+            
+            <p id="aviso"></p>
+            <button type="submit" id="acessar" onclick="assinatura()">Finalizar</button>
+
+        </section> <!--fim #analisePerfil-->
+
+        <div id="finalizado"></div>
+    </section> <!--fim #assinatura-->
+
+    <footer></footer> <!-- js html DOM para rodapé -->
+
+    <!--SCRIPTS EXTERNOS-->
+    <script src="./javascript/navBar_footer.js"></script>
+    <script src="./javascript/assinatura.js"></script>
+</body>
+</html>

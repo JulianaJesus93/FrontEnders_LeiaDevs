@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/estilo_BASE.css">
+    <link rel="stylesheet" href="./CSS/estilo_forms.css">
+
+    <link rel="icon" type="image/x-icon" href="./imagens/favLogo.png">
+    <title>Acesso de usuário</title>
+</head>
+
+<body>
+    <nav id="menu"></nav>
+    <!--js html DOM para navBar-->
+
+    <main id="areaDeLogin">
+        <div id="form_login">
+            <div class="imagem">
+                <img src="./imagens/favLogo.png" alt="">
+            </div>
+            <section>
+                <p id="aviso"></p>
+                <div id="input_email">
+                    <label for="email">E-mail:</label>
+                    <input class="input_login" type="email" name="email" id="nome_padrao"
+                        placeholder="SeuEmail@gmail.com" required>
+                </div>
+                <div id="input_senha">
+                    <label for="senha_padrao">Senha:</label>
+                    <input class="input_login" id='campo_senha' type="text" placeholder="sua senha" name="senha_padrao"
+                        id="senha_padrao" required>
+                </div>
+                <div class="opcoes_login">
+                    <div class="input_conectado">
+                        <input type="checkbox" name="conectado" id="">
+                        <label class="conectado" for="conectado">Mantenha-me conectado</label>
+                    </div>
+                    <a href="RecuperarSenha.html">Esqueci minha senha</a>
+                </div>
+                <button id="acessar" onclick="login()">Acessar minha conta</button>
+                <a id="cria_conta" href="cadastro.html">Crie sua conta</a>
+            </section>
+        </div>
+    </main>
+
+    <footer></footer> <!-- js html DOM para rodapé -->
+
+    <!--SCRIPTS EXTERNOS-->
+    <script src="./javascript/navBar_footer.js"></script>
+    <script src="./javascript/login.js" defer></script>
+</body>
+
+</html>

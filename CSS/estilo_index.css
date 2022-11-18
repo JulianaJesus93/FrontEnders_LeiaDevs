@@ -1,0 +1,376 @@
+/*slogan inicial da index*/
+#chamadaPrincipal {
+  /*div para chamada principal - tem img e texto*/
+  min-height: 400px;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chamadaPrincipal img {
+  width: 50vw;
+}
+
+.textoChamada {
+  /* div para texto do slogan*/
+  padding-left: 40px;
+  width: 100%;
+}
+
+.textoChamada h1 {
+  font-family: "Medula One";
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: rgb(181, 0, 232);
+}
+
+.textoChamada h1:hover {
+  color: rgb(136, 141, 242);
+}
+
+.paragrafoChamada {
+  /*texto com gradiente*/
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-image: linear-gradient(90deg, rgb(181, 0, 232), rgb(89, 217, 217));
+  color: rgb(13, 13, 13); /*essa cor é apenas para segurança*/
+  background-clip: text; /*só exibe o background que está atrás do texto*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /*deixa o texto transparente, para aparecer o fundo colorido*/
+}
+
+@media (max-width: 780px) {
+  /* responsividade para slogan da index */
+  #chamadaPrincipal {
+    flex-wrap: wrap;
+    min-height: 10vh;
+    padding: 20px;
+  }
+  
+  #chamadaPrincipal img {
+    width: 25vw;
+  }
+
+  .textoChamada {
+    padding: 0;
+  }
+  .paragrafoChamada {
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+/* estilo da seção de planos*/
+.pricingTableIndex {
+  /*cards da index*/
+  background: #fff none repeat scroll 0 0;
+  color: #232434;
+  padding: 20px 15px;
+  -webkit-box-shadow: 0px 19px 43px 0px rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 19px 43px 0px rgba(17, 17, 17, 0.05);
+  -webkit-perspective: 700px;
+  perspective: 700px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 1;
+}
+
+.pricingTableIndex .title {
+  /*h3 dos cards da index*/
+  display: block;
+  font-family: "Medula One";
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(181, 0, 232);
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pricingTableIndex:hover .title {
+  scale: 1.1;
+}
+
+.texto_card_index {
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+#texto1_index {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.our_pricing {
+  /*section completa - fundo degradê*/
+  background-image: linear-gradient(45deg, rgb(181, 0, 232), rgb(89, 217, 217));
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  /* margin-top:4px; */
+  padding: 20px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  .our_pricing {
+    background-size: auto;
+  }
+}
+
+.pricingTable {
+  /*cada card branco*/
+  background: #fff none repeat scroll 0 0;
+  color: #232434;
+  padding: 50px 15px;
+  -webkit-box-shadow: 0px 19px 43px 0px rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 19px 43px 0px rgba(17, 17, 17, 0.05);
+  -webkit-perspective: 700px;
+  perspective: 700px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .pricingTable {
+    margin-bottom: 60px;
+  }
+}
+
+.pricingTable .title {
+  /*h3 de cada card*/
+  display: block;
+  font-family: "Medula One";
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(181, 0, 232);
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pricingTable .price-month {
+  /*texto abaixo do h3 - "Plano mensal"*/
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: rgb(136, 141, 242);
+}
+
+.pricingTable .price-value {
+  /*mexe nos cards*/
+  font-size: 170px;
+  line-height: 112px;
+  position: relative;
+  margin: 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .pricingTable .price-value {
+    font-size: 130px;
+  }
+}
+
+.pricingTable .price-value .value-bg {
+  /*valor do plano*/
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pricingTable-2 .price-value .value-bg {
+  /*valor do plano em primeiro plano*/
+  color: rgb(181, 0, 232);
+  font-family: "Medula One";
+  font-size: 90px;
+  letter-spacing: 5px;
+}
+
+.pricingTable-2 .price-value {
+  /*valor do plano em backgroung*/
+  color: rgba(89, 217, 217, 0.15);
+}
+
+.text-pre-topicos {
+  /*texto que vem antes dos tópicos da ul*/
+  padding-bottom: 25px;
+  font-size: 15px;
+  color: rgb(61, 115, 115);
+}
+
+.pricingTable .pricing-content {
+  /*ul*/
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.pricingTable .pricing-content li {
+  /*itens da ul*/
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: rgb(61, 115, 115);
+}
+
+@media only screen and (max-width: 990px) {
+  .pricingTable {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingTable {
+    margin-bottom: 50px;
+  }
+}
+
+.btn-price-bg {
+  /*botão de assinatura ou saiba mais*/
+  background: rgb(89, 217, 217);
+  border: 0;
+  border-radius: 5000px;
+  color: rgb(181, 0, 232);
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'Medula One';
+  text-decoration: none;
+  letter-spacing: 2PX;
+  overflow: hidden;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pricingTableIndex:hover .btn-price-bg {
+  /*hover do botão*/
+  color: #fff;
+  border: 0;
+}
+
+.pricingTableIndex .btn-price-bg:active {
+  background: rgb(136, 141, 242);
+}
+
+.section-title {
+  /*título antes dos cards*/
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+h1.section-title-white {
+  color: #fff;
+  text-align: center;
+  font-family: "Medula One";
+  text-shadow: 4px 4px 5px rgba(13, 13, 13, 0.35);
+  font-size: 80px;
+  letter-spacing: 5px;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  padding: 0 10px;
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.descricao {
+  width: 60%;
+}
+.descricaoIndex {
+  width: 100%;
+}
+
+.ilustracao {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.ilustracao img {
+  width: 100%;
+}
+
+#caixa-corpo {
+  /*div criada para os cards*/
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.col-xs-12 {
+  /*tamanho de cada card na tela*/
+  width: 30%;
+}
+
+@media (max-width: 950px) {
+  .col-xs-12 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 650px) {
+  .col-xs-12 {
+    width: 80%;
+  }
+}
+
+
+
+/* FEEDBACKS */
+#feedbacks {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;  
+}
+
+#feedbacks img {
+  width: 45%;
+}
+
+#textFeed {
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  font-family: "Medula One";
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px rgba(51, 9, 240, 0.35);
+}
+
+#backFeed {
+  background:  linear-gradient(45deg, rgb(89, 217, 217), rgb(61, 115, 115));
+}
+
+@media (max-width: 750px) {
+  #feedbacks img {
+    width: 75%;
+  }
+}

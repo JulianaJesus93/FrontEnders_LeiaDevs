@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/estilo_BASE.css">
+    <link rel="stylesheet" href="./CSS/estilo_index.css">
+
+    <link rel="icon" type="image/x-icon" href="./imagens/favLogo.png">
+    <title>FrontEnders</title>
+</head>
+
+<body>
+    <nav id="menu"></nav> <!--js html DOM para navBar-->
+
+    <div id="chamadaPrincipal">
+        <!--ainda não está responsivo-->
+        <img src="./imagens/favLogo.png">
+        <div class="textoChamada">
+            <p class="paragrafoChamada">Aprenda tudo sobre o mundo tech com os melhores serviços para seu desenvolvimento.</p>
+            <!-- <p class="paragrafoChamada2">Conheça nosso lançamento</p>
+            <h1>~ LeiaDevs ~</h1> -->
+        </div>
+    </div>
+
+    <section id="pricing" class="our_pricing section-padding">
+        <!--resumo dos planos de assinatura-->
+        <div class="row">
+            <div class="section-title text-center">
+                <div class="descricaoIndex">
+                    <p class="section-title-white" id="texto1_index">Lançamento</p>
+                    <h1 class="section-title-white">LeiaDevs</h1>
+                </div>
+            </div>
+
+            <div id="caixa-corpo">
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <div class="pricingTableIndex pricingTable-2">
+                        <h3 class="title">Leia Júnior</h3>
+                        <p class="texto_card_index">Perfeito para você que está <b>inciando na carreira</b> e não sabe
+                            por onde começar sua jornada.</p>
+                        <a href="leiadevs.html#caixa-corpo" class="btn btn-lg btn-price-bg">Saiba mais</a>
+                    </div>
+                </div><!-- END COL  -->
+
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <div class="pricingTableIndex pricingTable-2">
+                        <h3 class="title">Leia Pleno</h3>
+                        <p class="texto_card_index">Já passou do básico e está inserido no mercado, mas <b>quer subir
+                                mais um degrau</b>? Vem comigo!</p>
+                        <a href="leiadevs.html#caixa-corpo" class="btn btn-lg btn-price-bg">Saiba mais</a>
+                    </div>
+                </div><!-- END COL  -->
+
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <div class="pricingTableIndex pricingTable-2">
+                        <h3 class="title">Leia Sênior</h3>
+                        <p class="texto_card_index">Experiências não te faltam, e seu conhecimento é gigante. Mas, <b>o
+                                que é bom pode melhorar sim</b>!</p>
+                        <a href="leiadevs.html#caixa-corpo" class="btn btn-lg btn-price-bg">Saiba mais</a>
+                    </div>
+                </div><!-- END COL  -->
+            </div>
+            <!--fim caixa-corpo-->
+        </div>
+        <!--END  ROW  -->
+    </section>
+
+    <!-- feedbacks -->
+    <div id="backFeed">
+        <h3 id="textFeed">Quem está no aguardo desse lançamento</h3>
+        <div id="feedbacks">
+            <img src="./imagens/depo1.png">
+            <img src="./imagens/depo2.png">
+        </div>
+    </div>
+    <!-- fim dos feedbacks -->
+
+    <footer></footer> <!-- js html DOM para rodapé -->
+
+    <!--SCRIPTS EXTERNOS-->
+    <script src="./javascript/navBar_footer.js"></script>
+</body>
+</html>

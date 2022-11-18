@@ -1,0 +1,386 @@
+.textoChamada1 { /* div para texto do slogan*/
+    padding: 0 15vw;
+    margin: 80px 0;
+}
+
+.paragrafoChamada1 { /*texto com gradiente*/
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg, rgb(181, 0, 232), rgb(89, 217, 217));
+    color: rgb(13, 13, 13); /*essa cor é apenas para segurança*/
+    background-clip: text; /*só exibe o background que está atrás do texto*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /*deixa o texto transparente, para aparecer o fundo colorido*/
+}
+
+@media (max-width: 750px) {
+    .textoChamada1 {
+        padding: 0 5vw;
+        margin: 60px 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .paragrafoChamada1 { 
+        font-size: 6vw;
+    }
+
+    .textoChamada1 {
+        padding: 0 5vw;
+        margin: 40px 0;
+    }
+}
+
+/*bootstrap planos assinatura*/
+
+.our_pricing { /*section completa - fundo degradê*/
+    background-image: linear-gradient(45deg, rgb(181, 0, 232), rgb(89, 217, 217));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    /* margin-top:4px; */
+    padding:20px;
+}
+
+@media only screen and (max-width:480px) {
+    .our_pricing {
+        background-size: auto;
+    }
+}
+
+.pricingTable { /*cada card branco*/
+    background: #fff none repeat scroll 0 0;
+    color: #232434;
+    padding: 50px 15px;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(17, 17, 17, 0.2);
+    box-shadow: 10px 10px 20px 0px rgba(17, 17, 17, 0.2);
+    -webkit-perspective: 700px;
+    perspective: 700px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width:480px) {
+    .pricingTable {
+        margin-bottom: 60px;
+    }
+}
+
+.pricingTable .title { /*h3 de cada card*/
+    display: block;
+    font-family: 'Medula One';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: rgb(181, 0, 232);
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricingTable:hover .title { 
+    scale: 1.15;
+}
+
+.pricingTable .price-month { /*texto abaixo do h3 - "Plano mensal"*/
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: rgb(136, 141, 242);
+}
+
+.pricingTable .price-value { /*mexe nos cards*/
+    font-size: 170px;
+    line-height: 112px;
+    position: relative;
+    margin: 40px 0;
+}
+
+@media only screen and (max-width:768px) {
+    .pricingTable .price-value {
+        font-size: 130px;
+    }
+}
+
+.pricingTable .price-value .value-bg { /*valor do plano*/
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pricingTable-2 .price-value .value-bg { /*valor do plano em primeiro plano*/
+    color: rgb(181, 0, 232);
+    font-family: 'Medula One';
+    font-size: 90px;
+    letter-spacing: 5px;
+}
+
+.pricingTable-2 .price-value { /*valor do plano em backgroung*/
+    color: rgba(89, 217, 217, 0.150);
+}
+
+.text-pre-topicos{ /*texto que vem antes dos tópicos da ul*/
+    padding-bottom: 25px;
+    font-size: 15px;
+    color: rgb(61, 115, 115);
+}
+
+.pricingTable .pricing-content { /*ul*/
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.pricingTable .pricing-content li { /*itens da ul*/
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: rgb(61, 115, 115);
+}
+
+@media only screen and (max-width: 990px) {
+    .pricingTable {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pricingTable {
+        margin-bottom: 50px;
+    }
+}
+
+.btn-price-bg { /*botão de assinatura ou saiba mais*/
+    background: rgb(89, 217, 217);
+    border: 0;
+    border-radius: 5000px;
+    color: rgb(181, 0, 232);
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Medula One';
+    text-decoration: none;
+    letter-spacing: 2PX;
+    overflow: hidden;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable:hover .btn-price-bg { /*hover do botão*/
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+
+.pricingTable .btn-price-bg:active {
+    background: rgb(136, 141, 242);
+}
+
+.section-title { /*título antes dos cards*/
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Medula One';
+    text-shadow: 4px 4px 5px rgba(13, 13, 13, 0.35);
+}
+
+.section-title h2 {
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Open Sans';
+    text-shadow: 4px 4px 5px rgba(13, 13, 13, 0.35);
+}
+
+.descricaoParagrafo {
+    padding: 0 10px;
+    margin: 0 15px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.descricao {
+    width: 60%;
+}
+.descricaoIndex {
+    width: 100%;
+}
+
+.ilustracao {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.ilustracao img {
+    width: 100%;
+}
+
+#caixa-corpo { /*div criada para os cards*/
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.col-xs-12 { /*tamanho de cada card na tela*/
+    width: 30%;
+}
+
+@media (max-width: 950px) {
+    .col-xs-12 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-title { /*título antes dos cards*/
+        display: block;
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
+    .ilustracao {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .ilustracao img {
+        width: 60%;
+    }
+}
+@media (max-width: 650px) {
+    .col-xs-12 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .descricaoParagrafo {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+
+    .ilustracao img {
+        width: 75%;
+    }
+
+    .section-title h1 {
+        font-size: 60px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+/* EASTER EGG */
+#servicos h2 {
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Medula One";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: rgb(181, 0, 232);
+    text-shadow: 2px 2px 3px rgba(13, 13, 13, 0.35);
+}
+
+#sucesso {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.easterEgg {
+    width: 200px;
+    height: 200px;
+    rotate: 45deg;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    background-image: linear-gradient(45deg, rgb(181, 0, 232), rgb(89, 217, 217));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.easterEgg:hover {
+    background-image: linear-gradient(45deg, rgba(182, 0, 232, 0.85), rgba(89, 217, 217, 0.9));
+}
+
+.container_eg {
+    rotate: -45deg;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.tituloServico {
+    /* rotate: -45deg; */
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.easterEgg:hover .tituloServico {
+    display: none;
+}
+
+.easterEgg p {
+    display: none;
+    /* rotate: -45deg; */
+    margin-top: 10px;
+}
+
+.easterEgg:hover p {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .easterEgg {
+        width: 180px;
+        height: 180px;
+        margin: 35px;
+    }
+
+    .easterEgg p {
+        display: flex;
+        margin: 0;
+    }
+
+}

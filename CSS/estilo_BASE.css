@@ -1,0 +1,145 @@
+/* FOLHA DE ESTILO PARA RECURSO BÁSICOS, QUE SERÃO USADOS EM TODAS AS PÁGINAS */
+
+/*FONTES*/
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* PALETA DE CORES
+roxo rgb(181, 0, 232);
+lilás rgb(136, 141, 242);
+azul rgb(89, 217, 217);
+cinza rgb(61, 115, 115);
+preto rgb(13, 13, 13); */
+
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.frontenders {
+  /*usar como span para destaque do nome da empresa ou do serviço*/
+  font-family: "Medula One";
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+#menu {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px 0 rgba(13, 13, 13, 0.5);
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: white;
+}
+
+#logo {
+  width: 200px;
+  transition: 0.5s;
+}
+
+#navegacao {
+  /* engloba a ul e o botão de entrar */
+  display: flex;
+}
+
+#navegacao a {
+  text-decoration: none;
+  font-family: "Medula One";
+}
+
+#links {
+  /* ul */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  /* a */
+  font-size: 30px;
+  background-color: white;
+  color: rgb(181, 0, 232);
+  font-family: "Medula One";
+}
+.link:hover{
+  /* trocar os estilo dos links da nav */
+  /* color:rgb(89, 217, 217) ; */ 
+  color:rgb(136, 141, 242);
+}
+
+#btn_entrar {
+  text-decoration: none;
+  color:rgb(181, 0, 232);
+  width: 100px;
+  padding: 5px 0;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(89, 217, 217);
+  font-size: 25px;
+  font-family: "Medula One";
+  text-align: center;
+}
+
+#btn_entrar:hover{
+  color:white;
+}
+#btn_entrar:active{
+  background-color:rgb(136, 141, 242);
+  color: white;
+}
+
+
+/* RODAPÉ */
+footer {
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  border-top-style: groove;
+  border-top-color: rgb(181, 0, 232);
+  border-top-width: 0.2em;
+}
+
+#logoPrincipal {
+  display: block;
+}
+
+#logoPrincipal img {
+  padding-top: 10px;
+  width: 200px;
+}
+
+#logoFooter {
+  width: 50px;
+}
+
+#logoFooter:hover {
+  opacity: 80%;;
+}
+
+#flexFooter {
+  display: inline-flex;
+}
+
+#textFooter {
+  font-family: "Medula One";
+  color: rgb(181, 0, 232);
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 150px;
+}
+}

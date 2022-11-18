@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/estilo_BASE.css">
+    <link rel="stylesheet" href="./CSS/estilo_forms.css">
+    <!-- Ju olha o zap -->
+
+    <link rel="icon" type="image/x-icon" href="./imagens/favLogo.png">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <nav id="menu"></nav>
+    <!--js html DOM para navBar-->
+
+    <main id="cadastro">
+        <div class="imagem">
+            <img src="./imagens/favLogo.png" alt="">
+        </div>
+        <section id="allCadastro">
+            <div class="form_cadastro">
+                <section id="dados_conta" class="dados_usuario">
+                    <h2>Dados da conta</h2>
+                    <div class="organizacao_input">
+                        <label for="email"> E-mail
+                            <input type="email" placeholder="Insira seu e-mail" name="" id="email" required>
+                        </label>
+                        <label for="confirme_email"> Confirme seu e-mail
+                            <input type="email" placeholder="Confirme o e-mail" name="" id="confirme_email" required>
+                        </label>
+                        <label for="senha"> Senha
+                            <input type="password" maxlength="8" placeholder="Insira sua senha" name="" id="senha"
+                                required>
+                        </label>
+                        <label for="confirme_senha"> Confime sua senha
+                            <input type="password" maxlength="8" placeholder="Confirme a senha" name=""
+                                id="confirme_senha" required>
+                        </label>
+                    </div>
+                </section>
+                <!--fim dados da conta-->
+
+                <section id="dados_pessoais" class="dados_usuario">
+                    <h2>Dados pessoais</h2>
+                    <div class="organizacao_input">
+                        <label for="nome_completo"> Nome completo
+                            <input type="text" placeholder="Insira seu nome completo" name="" id="nome_completo">
+                        </label>
+                        <label for="nome_social"> Nome social (opcional)
+                            <input type="text" placeholder="Insira seu nome social" name="" id="nome_social">
+                        </label>
+                        <label for="genero"> Gênero
+                            <select name="" id="genero">
+                                <option class="disable" selected disabled>Selecione uma opção</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
+                                <option>Outro</option>
+                            </select>
+                        </label>
+                        <label for="dt_nascimento"> Data de nascimento
+                            <input type="date" name="" id="dt_nascimento">
+                        </label>
+                        <label for="cpf"> CPF
+                            <input onkeydown="javascript: fMasc( this, mCPF );" maxlength="14" type="text"
+                                placeholder="Informe seu CPF" name="" id="cpf">
+                        </label>
+                        <label for="nº_celular">Número de celular
+                            <input onkeydown="javascript: fMasc( this, mTel );" maxlength="14" type="tel"
+                                placeholder="Informe seu contato" name="" id="nº_celular">
+                        </label>
+                    </div>
+                </section>
+                <!--fim dados pessoais-->
+
+                <section id="dados_localização" class="dados_usuario">
+                    <h2>Dados de localização</h2>
+                    <div class="organizacao_input">
+                        <label for="cep"> CEP
+                            <input required type="text" maxlength="8" placeholder="insira aqui seu cep" name=""
+                                id="cep">
+                        </label>
+                        <label for=""> Logradouro
+                            <input type="text" placeholder="Logradouro" name="" id="rua">
+                        </label>
+                        <label for=""> Complemento
+                            <input type="text" placeholder="Complemento" name="" id="complemento">
+                        </label>
+                        <label for=""> Bairro
+                            <input type="text" placeholder="Bairro" name="" id="bairro">
+                        </label>
+                        <label for=""> Cidade
+                            <input type="text" placeholder="Cidade" name="" id="cidade">
+                        </label>
+                        <label for=""> Estado
+                            <input type="text" placeholder="Estado" name="" id="estado">
+                        </label>
+                    </div>
+                </section>
+                <!--fim dados localização-->
+            </div>
+            <!--fim cadastro-->
+
+            <div class="dom-control">
+                <div class="esquerda">
+                    <button type="submit" id="anterior" onclick="previous()">Anterior</button>
+                </div>
+                <div class="direita">
+                <button type="submit" id="proximo">Próximo</button>
+                <button type="submit" id="finalizar" onclick="finish()">Finalizar</button>
+            </div>
+            </div>
+        </section>
+
+        <div id="finalizado"></div>
+    </main>
+
+    <footer></footer> <!-- js html DOM para rodapé -->
+
+    <!--SCRIPTS EXTERNOS-->
+    <script src="./javascript/ScripGeral.js" defer></script>
+    <script src="./javascript/navBar_footer.js"></script>
+    <script src="./javascript/mascara.js"></script>
+</body>
+
+</html>
