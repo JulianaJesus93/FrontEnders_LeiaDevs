@@ -8,7 +8,7 @@ Projeto desenvolvido em grupo para a disciplina de Front-end do curso de WebDev 
 
 Conteúdo fictício. Em desenvolvimento.
 
-Acesse o site: 
+Acesse o site:  https://julianajesus93.github.io/FrontEnders_LeiaDevs/
 
 ## **Detalhamento do projeto**
 A FrontEnders é aficcionada em disponibilizar conhecimento e contribuir para que a área de tecnologia no Brasil tenha os melhores profissionais possíveis. 
